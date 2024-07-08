@@ -1,27 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>학급 청소 당번 추첨기</title>
-    <!-- 부트스트랩 CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- SweetAlert2 CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@9">
-    <!-- 커스텀 CSS -->
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Assistant Interaction</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css" rel="stylesheet">
+  <!-- SweetAlert2 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.5/dist/sweetalert2.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <div class="container mt-5">
-        <div class="text-center">
-            <h1>학급 청소 당번 추첨기</h1>
-            <button class="btn btn-primary mt-3" id="pickButton">추첨하기</button>
-        </div>
-    </div>
+<body class="bg-gray-100">
 
-    <!-- SweetAlert2 JS -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-    <!-- 커스텀 JavaScript -->
-    <script src="script.js"></script>
+<div class="container mx-auto mt-5 text-center">
+  <!-- Start Button -->
+  <button id="startBtn" class="btn btn-primary">Start</button>
+
+  <!-- Interaction Area -->
+  <div id="interactionArea" class="mt-4 hidden">
+    <img src="https://lh3.googleusercontent.com/proxy/u7XzOx-GWIgQp66sQlm0k8LpRBQrnRMZdEB1ITshmYD8KxSAWKIyO_9ZCcT192ZZnBcPAsZ0AT2pRIRzuqHAgEpsMytEeawWV4p0igCdBEmL" alt="Virtual Assistant Image" class="mx-auto mb-3" style="max-width: 100%; height: auto;">
+    <input id="questionInput" type="text" class="form-control mb-3 w-full sm:w-1/2 px-4 py-2 rounded-lg border-2 border-gray-300 focus:outline-none focus:border-blue-500" placeholder="Enter your question...">
+    <div id="responseArea" class="mt-3 text-left"></div>
+  </div>
+</div>
+
+<!-- SweetAlert2 JS -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.5/dist/sweetalert2.min.js"></script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Custom JavaScript -->
+<script src="script.js"></script>
+
 </body>
 </html>
+

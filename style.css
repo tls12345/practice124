@@ -1,12 +1,5 @@
-body {
-  background-color: #f8f9fa;
-}
+/* styles.css */
 
-.container {
-  max-width: 600px;
+.hidden {
+  display: none;
 }
-
-.btn {
-  font-size: 1.2rem;
-}
-
